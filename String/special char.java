@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int n = str.length();
+        char ch[] = str.toCharArray();
+        char temp = 0;
+        for(int i =0;i < n;i++){
+            if(ch[i] >= '0' && ch[i] <= '9' && ch[i] >= 'A' && ch[i] <= 'Z' && ch[i] >= 'a' && ch[i] >= 'z'){
+             temp = ch[i];
+            }
+        }
+        String res = new String(temp);
+        System.out.print(res);
+    }
+}
